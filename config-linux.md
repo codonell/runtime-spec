@@ -646,7 +646,7 @@ The following parameters can be specified to set up seccomp:
 
     * **`errnoRet`** *(uint, OPTIONAL)* - the errno return code to use.
         Some actions like `SCMP_ACT_ERRNO` and `SCMP_ACT_TRACE` allow to specify the errno
-        code to return. If not specified its default value is `EPERM`.
+        code to return. If not specified its default value is `ENOSYS`.
 
     * **`args`** *(array of objects, OPTIONAL)* - the specific syscall in seccomp.
         Each entry has the following structure:
